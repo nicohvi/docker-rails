@@ -4,7 +4,7 @@ FROM nicohvi/ruby
 RUN yum install -y postgresql-devel && yum clean all
 
 # install nodejs for js runtime (necessary for coffeescript-compilation)
-RUN mkdir -p /tmp/nodejs-build && cd /tmp/nodejsbuild && \
+RUN mkdir -p /tmp/nodejs-build && cd /tmp/nodejs-build && \
     curl -O --progress http://nodejs.org/dist/v0.10.32/node-v0.10.32.tar.gz && \
     tar -zxf node-v0.10.32.tar.gz && cd node-v0.10.32 && \
     ./configure && make && make install && \
