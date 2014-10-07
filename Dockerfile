@@ -11,4 +11,4 @@ RUN mkdir -p /tmp/nodejs-build && cd /tmp/nodejs-build && \
     cd / && rm -rf /tmp/nodejs-build
 
 # install rails
-RUN gem install rails -v 4.1.16 --no-ri --no-rdoc
+RUN gem install rails -v 4.1.6 --no-ri --no-rdoc
